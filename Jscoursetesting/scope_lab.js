@@ -17,13 +17,24 @@
 // console.log (blockVar);
 // console.log (blockLet);
 
-function show(){
-    var functionVar = "I'm a block-scoped var";
-    let functionLet = "I'm a block-scoped let";
-    const functionConst = "I'm a block-scoped const"; 
-}
-show();
+// function show(){
+//     var functionVar = "I'm a block-scoped var";
+//     let functionLet = "I'm a block-scoped let";
+//     const functionConst = "I'm a block-scoped const"; 
+// }
+// show();
 
-console.log(functionVar); // Throw ReferenceError
-console.log(functionLet); // Throw ReferenceError
-console.log(functionConst); // Throw ReferenceError
+// console.log(functionVar); // Throw ReferenceError
+// console.log(functionLet); // Throw ReferenceError
+// console.log(functionConst); // Throw ReferenceError
+
+{
+    let score = 85;
+    const maxscore = 100;
+    var grade = "A";
+
+    console.log("score:", score);
+    console.log("Max Score:", maxscore);
+    console.log("Grade:", grade);
+
+}
